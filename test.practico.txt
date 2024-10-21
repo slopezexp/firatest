@@ -1,0 +1,47 @@
+Preguntas:
+
+1. Como es tu día a día en el proyecto
+ 1.1 - Stack que utilizas: backend/ frontend 	
+ 1.2 - ¿Qué metodologís utilizáis para gestioanr el equipo?¿Ágiles?
+ 1.3 - ¿Eliges la tarjeta o te la asignan?
+
+2. ¿Qué versiones de Java conoces?
+
+3. Diferencia entre Lazy vs Eagger
+  Bucle
+
+4. ¿Qué tipos de Projections conoces? Spring Data Rest
+5. ¿Qué significa que una clase o método tenga @Transactional?
+   5.1 -Si quieres que las consultas sean de de solo lectura, ¿Cómo lo configurarías?
+
+
+
+Práctica
+
+1.	Crear una entidad Person con sus anotaciones
+        Añadir variable id como clave primaria
+        Añadir variable string name
+        Getters/Setters , etc.
+		
+2.  Crear un service PersonService. Tipo interface. Tenga un método llamado getListByName, que reciba como parámetro un string name y devuelva una collection/list/etc
+    3.1 crear clase que implemente PersonService (PersonServiceImpl)
+
+3. Crear un repositorio para la entidad Person
+  3.1 - Crear un método utilizando JPA, que obtenga una lista de Person buscando por name
+
+4. Implementar en PersonServiceImpl el método getListByName, accediendo al repositorio PersonRepository creado en el punto 3.
+
+5. Implementar en el test PersonServiceImplTest el método getListByName
+
+6. Crear otro método en PersonServiceImpl que obtenga una colection/list/etc. de id's utilizando una lambda/stream.
+
+7. Crear un controller que reciba como parámetro en la url un string. Este controller debe llamar al PersonService.getListByName
+
+8. Implementa el test del controller
+
+9. Sube a git los cambios, explicando en el commit el trabajo realizado
+
+EB1 - Añade al gitignore los ficheros de *.log
+EB2 - Proyecto que compile
+
+
